@@ -38,3 +38,8 @@ Inspect the status of the tomcat service:
 docker service ps tomcat-stack_tomcat
 ```
 
+### Additional Step
+Set a maximum number of replicas per node:
+```
+docker service update --replicas-max-per-node=3 tomcat-stack_tomcat
+```
